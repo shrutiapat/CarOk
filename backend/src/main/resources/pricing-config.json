@@ -5,35 +5,94 @@
       "baseFare": 50.0,
       "perKmRate": 15.0,
       "perMinuteRate": 2.0,
-      "currency": "INR"
+      "currency": "INR",
+      "surgeMin": 1.0,
+      "surgeMax": 1.5
     },
     {
       "mode": "BIKE",
       "baseFare": 20.0,
       "perKmRate": 8.0,
       "perMinuteRate": 1.0,
-      "currency": "INR"
+      "currency": "INR",
+      "bufferPercentage": 10.0
     },
     {
       "mode": "METRO",
-      "baseFare": 10.0,
-      "perKmRate": 2.0,
+      "baseFare": 0.0,
+      "perKmRate": 0.0,
       "perMinuteRate": 0.0,
-      "currency": "INR"
+      "currency": "INR",
+      "fareBands": [
+        {
+          "minKm": 0,
+          "maxKm": 5,
+          "fixedFare": 20.0
+        },
+        {
+          "minKm": 5,
+          "maxKm": 12,
+          "fixedFare": 30.0
+        },
+        {
+          "minKm": 12,
+          "maxKm": 25,
+          "fixedFare": 50.0
+        },
+        {
+          "minKm": 25,
+          "maxKm": 999,
+          "fixedFare": 60.0
+        }
+      ]
     },
     {
       "mode": "BUS",
-      "baseFare": 5.0,
-      "perKmRate": 1.5,
+      "baseFare": 0.0,
+      "perKmRate": 0.0,
       "perMinuteRate": 0.0,
-      "currency": "INR"
+      "currency": "INR",
+      "fareBands": [
+        {
+          "minKm": 0,
+          "maxKm": 3,
+          "fixedFare": 10.0
+        },
+        {
+          "minKm": 3,
+          "maxKm": 10,
+          "fixedFare": 20.0
+        },
+        {
+          "minKm": 10,
+          "maxKm": 999,
+          "fixedFare": 35.0
+        }
+      ]
     },
     {
       "mode": "TRAIN",
-      "baseFare": 15.0,
-      "perKmRate": 1.0,
+      "baseFare": 0.0,
+      "perKmRate": 0.0,
       "perMinuteRate": 0.0,
-      "currency": "INR"
+      "currency": "INR",
+      "fareBands": [
+        {
+          "minKm": 0,
+          "maxKm": 10,
+          "fixedFare": 15.0
+        },
+        {
+          "minKm": 10,
+          "maxKm": 30,
+          "fixedFare": 45.0
+        },
+        {
+          "minKm": 30,
+          "maxKm": 999,
+          "fixedFare": 80.0
+        }
+      ]
     }
   ]
 }

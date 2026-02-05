@@ -8,3 +8,8 @@ spring:
 logging:
   level:
     com.journeyplanner: DEBUG
+
+google:
+  api:
+    key: "YOUR_GOOGLE_API_KEY_HERE"
+    directions-url: "https://maps.googleapis.com/maps/api/directions/json"
